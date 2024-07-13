@@ -5,20 +5,20 @@
 class Snapvault < Formula
   desc ""
   homepage "https://github.com/cotramarko/homebrew-tools"
-  version "1.0.0"
+  version "1.1.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cotramarko/snapvault/releases/download/v1.0.0/snapvault_Darwin_x86_64"
-      sha256 "ea51998c96eb4224c101a13c9d660e709e6a90dd67da2a942935664452053352"
+      url "https://github.com/cotramarko/snapvault/releases/download/v1.1.0/snapvault_Darwin_x86_64"
+      sha256 "b5b6e3326fbb497f9c8f47a8d28a58b045e64d4ef35146502e6e50deaebd94bb"
 
       def install
         bin.install "snapvault_Darwin_x86_64" => "snapvault"
       end
     end
     on_arm do
-      url "https://github.com/cotramarko/snapvault/releases/download/v1.0.0/snapvault_Darwin_arm64"
-      sha256 "2b46621829d8a9a09a38586f716e899e9e872190ddcb009a1a873348a24454af"
+      url "https://github.com/cotramarko/snapvault/releases/download/v1.1.0/snapvault_Darwin_arm64"
+      sha256 "c7aad8d6fb525cb23e6b87d5a960bf4e83f9fd067f30f0e93db49af843774398"
 
       def install
         bin.install "snapvault_Darwin_arm64" => "snapvault"
@@ -29,8 +29,8 @@ class Snapvault < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cotramarko/snapvault/releases/download/v1.0.0/snapvault_Linux_x86_64"
-        sha256 "400e742934146471cbec90be11bd1465f60d485fda71d4e99c0b4985bcad140d"
+        url "https://github.com/cotramarko/snapvault/releases/download/v1.1.0/snapvault_Linux_x86_64"
+        sha256 "de0003a933397edea824bb1c8ce2bb48038b9e6ef95723b26b06fc1760151697"
 
         def install
           bin.install "snapvault_Linux_x86_64" => "snapvault"
@@ -39,8 +39,8 @@ class Snapvault < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/cotramarko/snapvault/releases/download/v1.0.0/snapvault_Linux_arm64"
-        sha256 "541ec38c2bb96371476505d9db91d9d10ef40f0a0042e7b98855f005f7e58ff1"
+        url "https://github.com/cotramarko/snapvault/releases/download/v1.1.0/snapvault_Linux_arm64"
+        sha256 "b3b618ad4998a8daefc217a7c4634519882c833519a631adc1c4b49ef333af1a"
 
         def install
           bin.install "snapvault_Linux_arm64" => "snapvault"
